@@ -1,13 +1,11 @@
-'use strict';
-var test = require('ava');
-var isArchive = require('./');
+import test from 'ava';
+import m from './';
 
-test(function (t) {
-	t.assert(isArchive('unicorn.zip'));
-	t.assert(isArchive('unicorn.tar'));
-	t.assert(isArchive('unicorn.TAR'));
-	t.assert(!isArchive('unicorn.jpg'));
-	t.assert(!isArchive('unicornzip'));
-	t.assert(!isArchive('unicorn.txt'));
-	t.end();
+test(t => {
+	t.true(m('unicorn.zip'));
+	t.true(m('unicorn.tar'));
+	t.true(m('unicorn.TAR'));
+	t.false(m('unicorn.jpg'));
+	t.false(m('unicornzip'));
+	t.false(m('unicorn.txt'));
 });
