@@ -1,11 +1,11 @@
 import test from 'ava';
-import m from './';
+import isArchive from '.';
 
-test(t => {
-	t.true(m('unicorn.zip'));
-	t.true(m('unicorn.tar'));
-	t.true(m('unicorn.TAR'));
-	t.false(m('unicorn.jpg'));
-	t.false(m('unicornzip'));
-	t.false(m('unicorn.txt'));
+test('main', t => {
+	t.true(isArchive('unicorn.zip'));
+	t.true(isArchive('unicorn.tar'));
+	t.true(isArchive('unicorn.TAR'));
+	t.false(isArchive('unicorn.jpg'));
+	t.false(isArchive('unicornzip'));
+	t.false(isArchive('unicorn.txt'));
 });

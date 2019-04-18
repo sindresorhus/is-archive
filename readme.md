@@ -6,14 +6,14 @@
 ## Install
 
 ```
-$ npm install --save is-archive
+$ npm install is-archive
 ```
 
 
 ## Usage
 
 ```js
-var isArchive = require('is-archive');
+const isArchive = require('is-archive');
 
 isArchive('src/unicorn.zip');
 //=> true
@@ -30,4 +30,4 @@ isArchive('src/unicorn.txt');
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
