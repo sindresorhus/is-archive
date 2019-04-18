@@ -1,6 +1,6 @@
 # is-archive [![Build Status](https://travis-ci.org/sindresorhus/is-archive.svg?branch=master)](https://travis-ci.org/sindresorhus/is-archive)
 
-> Check if a filepath is an archive file
+> Check if a file path is an archive file
 
 
 ## Install
@@ -15,10 +15,10 @@ $ npm install is-archive
 ```js
 const isArchive = require('is-archive');
 
-isArchive('src/unicorn.zip');
+isArchive('source/unicorn.zip');
 //=> true
 
-isArchive('src/unicorn.txt');
+isArchive('source/unicorn.txt');
 //=> false
 ```
 

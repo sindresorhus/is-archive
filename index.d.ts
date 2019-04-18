@@ -1,17 +1,17 @@
 /**
-Check if a filepath is an archive file.
+Check if a file path is an archive file.
 
 @example
 ```
 import isArchive = require('is-archive');
 
-isArchive('src/unicorn.zip');
+isArchive('source/unicorn.zip');
 //=> true
 
-isArchive('src/unicorn.txt');
+isArchive('source/unicorn.txt');
 //=> false
 ```
 */
-declare function isArchive(filepath: string): boolean;
+declare function isArchive(filePath: string): boolean;
 
 export = isArchive;
