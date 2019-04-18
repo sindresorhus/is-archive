@@ -1,12 +1,14 @@
 'use strict';
-var path = require('path');
-var archiveExtensions = require('archive-extensions');
-var exts = Object.create(null);
+const path = require('path');
+const archiveExtensions = require('archive-extensions');
 
-archiveExtensions.forEach(function (el) {
-	exts[el] = true;
-});
+const extensions = new Set(archiveExtensions);
 
-module.exports = function (filepath) {
-	return path.extname(filepath).slice(1).toLowerCase() in exts;
+module.exports = filepath => {
+	return extensions.has(
+		path
+			.extname(filepath)
+			.slice(1)
+			.toLowerCase()
+	);
 };
