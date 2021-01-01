@@ -1,4 +1,4 @@
-# is-archive [![Build Status](https://travis-ci.org/sindresorhus/is-archive.svg?branch=master)](https://travis-ci.org/sindresorhus/is-archive)
+# is-archive
 
 > Check if a file path is an archive file
 
