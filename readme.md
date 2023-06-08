@@ -25,7 +25,7 @@ isArchive('source/unicorn.txt');
 
 ## Related
 
-- [archive-extensions](https://github.com/arthurvr/archive-extensions) - List of archive file extensions
+- [archive-extensions](https://github.com/sindresorhus/archive-extensions) - List of archive file extensions
 
 
 ## License
